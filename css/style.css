@@ -28,11 +28,14 @@ nav ul {
 }
 .top-menu a {
     text-decoration: none;
-    color: rgb(219, 16, 16);
+    color: black;
     font-weight: bold;
 }
 .top-menu a:hover {
-    color: rgb(1, 12, 1);
+    color: red;
+}
+.top-menu a:visited {
+    color: red;
 }
 h1 {
   font: bold;  
