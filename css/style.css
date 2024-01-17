@@ -35,7 +35,9 @@ nav ul {
     color: rgb(1, 12, 1);
 }
 h1 {
-    
+  font: bold;  
+  color: brown;
+  margin: 0;
 }
 h2 {
 
