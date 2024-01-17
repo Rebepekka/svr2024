@@ -51,7 +51,8 @@ p {
 
 }
 img {
-
+    max-width: 1000px;
+    border: 10px solid green ;
 
 }
 section {
@@ -59,9 +60,9 @@ section {
 
 }
 footer {
-background-color: black;
-color: aliceblue;
-padding: 1em;
+    background-color: black;
+    color: aliceblue;
+    padding: 1em;
 }
 .h2spe {
     background-color: blue; 
