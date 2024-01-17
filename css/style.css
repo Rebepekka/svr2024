@@ -11,15 +11,9 @@ header {
     text-decoration: dotted;
     padding: 1em;
 }
-#main-header {
-    background-color: blue;
-    text-align: center;
-    padding: 20px;
-  }
 nav {
     background-color: beige;
     padding: 0.7em;
-
 }
 nav ul {
     list-style-type: none;
