@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        main, footer {
+            display: flex;
+        }
+        article {
+            background-color: beige;
+            margin: 5px;
+        }
+        .big {
+           flex-grow: 2;
+           background-color: bisque;
+        }
+        .small {
+            flex: 1;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+<article class="big"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolor impedit distinctio eligendi recusandae vitae. Ipsa quod nemo sunt quos officia voluptate natus placeat architecto repudiandae molestias, sequi saepe. Laborum?</article>
+<article class="small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A veritatis obcaecati architecto blanditiis dolores molestias accusantium autem nisi. Ducimus similique eius soluta exercitationem sunt dolores inventore libero quaerat culpa voluptatibus.</article>    
+<article class="small"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores iusto exercitationem saepe animi voluptatem earum at odio. Quo, ducimus facere. Odit corporis placeat labore neque animi quisquam! Consectetur, consequuntur nemo.</article>
+
+    </main>
+    <table class="table table-hover">
+        <tr>
+            <th>studentNumber</th>
+            <th>fname</th>
+            <th>lname</th>
+            <th>City</th>
+        </tr>
+        
+        <tr>
+            <td>123</td>
+            <td>Pekka</td>
+            <td>Henrikson</td>
+            <td>Helsinki</td>
+        </tr>
+        
+        <tr>
+            <td>124</td>
+            <td>John</td>
+            <td>Smith</td>
+            <td>Helsinki</td>
+        </tr>
+        
+        </table>
+        <h2>Example of a form</h2>
+
+        <form method="post" action="#">
+            Name: <input type="text" name="fName" required minlength="7" maxlength="13"> <br>
+            Email ID: <input type="email" name="email"> <br>
+            DOB: <input type="date" name="dob" required> <br>
+            Message: <input type="text" name="msg"> <br>
+            <button type="submit">Submit</button> <br>
+            <button type="reset">Reset</button> <br>
+
+        </form>
+
+    <footer>
+        <p class="alert alert-primary" role="alert">This is an alert message</p>
+        <p class="big"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem temporibus non cum ipsum culpa necessitatibus tempore maiores minima animi! Sed, officia laboriosam soluta quaerat hic ipsam laborum pariatur magnam voluptatibus!</p>
+        <p class="small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque recusandae, autem veritatis adipisci laborum, eos voluptas, quasi vitae perspiciatis doloremque. Explicabo dolorum, nisi quam error possimus sit itaque numquam.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
