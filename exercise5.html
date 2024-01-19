@@ -4,37 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Layout</title>
+
+    <style>
+        header {
+            display: flex;
+            flex-direction: column;
+            background-color: purple;
+            text-align: center;
+            color: white;
+            padding: 30px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .body {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+            font-weight: bolder;
+            padding: 1em;
+            font-size: 20px;
+        }
+        .text {
+            flex: 1;
+            background-color: aqua;
+            padding: 20px;
+            margin: 5px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            background-color: purple;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    
-    
-    <header>
-        <h1>Flex Box Examples</h1>
-    </header>
-    
-    <nav></nav> <!-- if needed -->
-    <main>
-        <h2>What is HTML</h2>
-        <article> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, aliquid? Iure, similique blanditiis sapiente nam accusantium unde aspernatur rem repudiandae officiis, libero consequatur nostrum quia at, iusto explicabo laborum sunt!</article>
-        <h2>HTML Elements</h2>
-        <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus rem fugit adipisci sint saepe animi magni voluptatem dignissimos natus nostrum tenetur eveniet, aliquid consectetur. Nesciunt sit ipsam nostrum impedit.</article>
-        <h2> Block Level Elements</h2>
-        <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, cumque perspiciatis magnam numquam facere placeat rem sunt cum. Nobis eum ducimus voluptates nesciunt odio qui ratione voluptatibus optio molestiae nulla?</article>
-    </main>
 
-
-    <aside>
+    <header>Flex Box Examples</header>
+<div class="body">
+    <aside class="sidebar">
         <p>side bar</p>
         <p>side bar</p>
         <p>side bar</p>
         <p>side bar</p>
         <p>side bar</p>
     </aside>
-
+   
+ <!--   <nav></nav>  (if needed)  -->
+    <main>
+        <article class="text"><h3>What is HTML</h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, aliquid? Iure, similique blanditiis sapiente nam accusantium unde aspernatur rem repudiandae officiis, libero consequatur nostrum quia at, iusto explicabo laborum sunt!</article>
+        <article class="text"><h3>HTML Elements</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus rem fugit adipisci sint saepe animi magni voluptatem dignissimos natus nostrum tenetur eveniet, aliquid consectetur. Nesciunt sit ipsam nostrum impedit.</article>
+        <article class="text"><h3> Block Level Elements</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, cumque perspiciatis magnam numquam facere placeat rem sunt cum. Nobis eum ducimus voluptates nesciunt odio qui ratione voluptatibus optio molestiae nulla?</article>
+    </main>
+</div>
     <footer>
-        <p>Learning Flex &copy; 2022 </p>
+        <p>Learning Flex @ 2022 </p>
     </footer>
-
 
 </body>
 </html>
